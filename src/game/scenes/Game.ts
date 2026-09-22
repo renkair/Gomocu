@@ -11,6 +11,7 @@ interface Stone
 
 export class Game extends Scene
 {
+    camera!: Phaser.Cameras.Scene2D.Camera;
     boardOrigin: BoardOrigin = { x: 0, y: 0 };
     state!: BoardState;
     stones: Stone[] = [];
